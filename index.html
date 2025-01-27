@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ayan Ali | Creative Developer</title>
+    <script src="https://unpkg.com/three@0.137.0/build/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="noise"></div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <nav>
+                <div class="nav-brand">M.A</div>
+                <div class="nav-links">
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+
+            <header class="hero">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="images/profile.jpg" alt="Muhammad Ayan Ali" class="profile-image">
+                    </div>
+                    <h1>
+                        <div class="line"><span>Creative</span></div>
+                        <div class="line"><span>Developer &</span></div>
+                        <div class="line"><span>Designer</span></div>
+                    </h1>
+                    <p>Crafting digital experiences that leave a lasting impression</p>
+                    <div class="hero-cta">
+                        <a href="#work" class="cta-primary">View Projects</a>
+                        <a href="#contact" class="cta-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="line"></div>
+                </div>
+            </header>
+
+            <section id="work">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2>Selected Works</h2>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card" data-color="#FF5733">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="E-Commerce Platform">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack development</p>
+                            <a href="#" class="project-link">
+                                View Case Study
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card" data-color="#33FF57">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Portfolio Design">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Design</h3>
+                            <p>UI/UX & Development</p>
+                            <a href="#" class="project-link">
+                                View Case Study
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card" data-color="#3357FF">
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Mobile App UI">
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Mobile App UI</h3>
+                            <p>UI Design & Prototyping</p>
+                            <a href="#" class="project-link">
+                                View Case Study
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/about.jpg" alt="About Muhammad Ayan Ali">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="about-text">
+                        <p class="lead">I'm a creative developer based in Pakistan, focused on crafting clean & user‑friendly experiences.</p>
+                        <p>With over 5 years of experience in digital design and development, I combine technical expertise with creative thinking to build innovative web solutions.</p>
+                    </div>
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>Development</h3>
+                            <ul>
+                                <li>JavaScript (ES6+)</li>
+                                <li>React.js</li>
+                                <li>Node.js</li>
+                                <li>Three.js</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Design</h3>
+                            <ul>
+                                <li>UI/UX Design</li>
+                                <li>Prototyping</li>
+                                <li>Design Systems</li>
+                                <li>Motion Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2>Let's Connect</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p class="lead">Have a project in mind? Let's create something amazing together.</p>
+                        <div class="contact-links">
+                            <a href="mailto:contact@muhammadayanali.com" class="contact-link">
+                                <span>Email</span>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="contact-link">
+                                <span>LinkedIn</span>
+                                <span class="arrow">→</span>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="contact-link">
+                                <span>GitHub</span>
+                                <span class="arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <p> 2025 Muhammad Ayan Ali. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="https://twitter.com" target="_blank">Twitter</a>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                        <a href="https://dribbble.com" target="_blank">Dribbble</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="mobile-menu">
+        <div class="menu-content">
+            <nav class="menu-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-footer">
+                <div class="social-links">
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
